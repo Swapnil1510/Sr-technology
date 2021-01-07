@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown Menu</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    </head>
+<body>
+    <h2 class="w3-center">
+<div class="title">
+<div class="logo">
+<img src="logo.png"/></div>
+    <h1> SR TECHNOLOGY</h1>
+<font style="color: brown">(Education is must to all!)</font>
+</div>
+        </h2>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Languages <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="C%20Language/">C</a>
+      <a href="#C++">C++</a>
+      <a href="#PYTHON">PYTHON</a>
+    <a href="#JAVASCRIPT">JAVASCRIPT</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Videos <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#javascript">JAVASCRIPT</a>
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#bootstrap">BOOTSTRAP</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Codes <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#html">HTML</a>
+      <a href="#css">CSS</a>
+      <a href="#c++">C++</a>
+      <a href="#python">PYTHON</a>
+    </div>
+  </div>
+  <a href="#contact">Contact Us</a>
+  <a href="aboutme.html">About Me</a>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="Website-Design-Background-1.jpg" style="width:100%">
+  <div class="text">Computer Science and Engineering</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="slider-background-1.jpg" style="width:100%">
+  <div class="text">Web development course</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="images.png" style="width:100%">
+  <div class="text">Programming Languages</div>
+</div>
+    
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="wallpaper.wiki-HD-Computer-Science-Photos-PIC-WPE005361.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="row">
+  <div class="column" style="background-color: burlywood;">
+    <h2>About Us</h2>
+<p>This is my first website where I am inserting the programming languages and development course for the students.<span id="dots">...</span><span id="more">I am also inserting the videos of this programming languages and development courses.Through these videos students can learn easily the development coursesand programming languages.</span></p>
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+  </div>
+  <div class="column" style="background-color:darkcyan;">
+     <h2>Software Skills</h2>
+      <div class="skillBox">
+          <p>Html</p>
+          <p>85%</p>
+          <div class="Skill">
+              <div class="skill_level" style="width: 85%"></div>
+          </div>
+      </div>
+      <div class="skillBox">
+          <p>Css</p>
+          <p>90%</p>
+          <div class="Skill">
+              <div class="skill_level" style="width: 90%"></div>
+          </div>
+      </div>
+      <div class="skillBox">
+          <p>Javascript</p>
+          <p>80%</p>
+          <div class="Skill">
+              <div class="skill_level" style="width: 80%"></div>
+          </div>
+      </div>
+</div>
+</div>
+    <section>
+        <div class="Services">
+            <h2>Our Services</h2>
+            <div class="cen">
+                <div class="Service">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Web Development</h3>
+                    <p>Complex or simple, just ask for your web development preferences, we would employ our utmost expertise to offer you the best user experience. At Convergent Infoware, we promise incomparable cost efficiency and reliability in the sphere of website design and development. It is our unique methodologies and years of experience in PHP Development(using top MVC Frameworks like Laravel, CodeIgniter, WordPress etc.) and Mobile Website Development that help us to build goal-oriented web applications.</p>
+                </div>
+            <div class="Service">
+                    <i class="fab fa-html5"></i>
+                    <h3>Html</h3>
+                    <p>HTML, or Hypertext Markup Language, is used to create web pages. Site authors use HTML to format text as titles and headings, to arrange graphics on a webpage, to link to different pages within a website, and to link to different websites. ... HTML elements are delineated by tags , written using angle brackets .Short for HyperText Markup Language, the authoring language used to create documents on the World Wide Web.HTML is similar to SGML, although it is not a strict subset. HTML defines the structure and layout of a Web document by using a variety of tags and attributes.</p>
+                </div>
+            <div class="Service">
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>A programming language is a formal language, which comprises a set of instructions used to produce various kinds of output. Programming languages are used in computer programming to create programs that implement specific algorithms.Most programming languages consist of instructions for computers, although there are programmable machines that use a limited set of specific instructions, rather than the general programming languages of modern computers. Early ones preceded the invention of the digital computer.[1]</p>
+                </div>    
+            </div>
+        </div>
+    </section>
+    <div class="team-section">
+       <div class="inner-width">
+           <h2>Meet Our Team</h2>
+           <div class="pers">
+               
+               
+               <div class="pe">
+                  <img src="FB_IMG_15479191637285208.jpg" alt=" ">
+                   <div class="p-name">Swapnil Rai</div>
+                   <div class="p-des">Developer</div>
+                   <div class="p-sm">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+               <div class="pe">
+                  <img src="FB_IMG_15479185681462762.jpg" alt=" ">
+                   <div class="p-name">Bineet Jha</div>
+                   <div class="p-des">Designer</div>
+                   <div class="p-sm">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+               <div class="pe">
+                  <img src="FB_IMG_15479186272378410.jpg" alt=" ">
+                   <div class="p-name">Sanju Singh</div>
+                   <div class="p-des">Designer</div>
+                   <div class="p-sm">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+               </div>
+           </div>
+        </div>
+    </div> 
+<footer>
+<div class="footer-container">
+    <div class="footer-main">
+        <div class="footer-column">
+          <h3>Subscribe</h3>
+            <input type="email" placeholder="Esubscribe">
+            <input type="submit" value="Subscribe">
+        </div>
+<div class="footer-column">
+    <h3>Address</h3>
+<span class="fa fa-map-marker"><p>154/A,B.T.Road,Kolkata-700108,West Bengal</p></span>
+<span class="fas fa-envelope"><p>info@srtechnology.com</p></span>
+ </div>
+         <div class="footer-column">
+          <h3>Phone</h3>
+            <span class="fa fa-phone">
+                 <p>(+91) 8975605228</p><br>
+                 <p>(+91) 8840434208</p>
+             </span>
+            </div>
+</div>
+</div>
+<div class="footer-copy-networking">
+       <div class="main-copy-networking">
+          <div class="footer-copy">
+               &copy;2019,All Rights Reserved-(srtechnology).
+           </div>
+           <div class="footer-networking">
+              <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-youtube"></a>
+               <a href="#" class="fab fa-instagram"></a>
+           </div>
+        </div>
+</div>
+</footer>
+</body>
+</html>
